@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css"/>
+</head>
+<body>
+    <div class="header">
+    <div id="top-grey-bar">
+        <div class="container">
+            <div class="header-menu">
+                <ul>
+                    <li class="why"><span>Why MMO?</span></li>
+                    <li class="why"><span>Download App</span></li>
+                    <img class="apple" src="https://www.freepnglogos.com/uploads/apple-logo-png/file-apple-logo-black-svg-wikimedia-commons-1.png"/>
+                    <img class="play-store" src="https://www.freepnglogos.com/uploads/google-play-png-logo/store-app-store-google-google-play-logo-play-png-logo-symbol-17.png"/>
+
+                </ul>
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li class="why"><span>FSSC 22000 Certification</span></li>
+                    <li class="why"><span>About Us</span></li>
+                    <li class="why"><span>Careers @ MMO</span></li>
+                    <li class="why"><span>Contact Us </span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="top-nav">
+        <div class="inner-container">
+            <img class="logo" src="assets/images/logo.png"/>
+            <div class="location-select">
+                <img src="https://www.licious.in/img/rebranding/location_icon.svg"/>
+                <select id="location">
+                <option value="Bangalore">
+                    Bangalore
+                </option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kolkata">Kolkata</option>
+                </option>
+                </select>
+            </div>
+            <input id="input" type="text" placeholder="Search for any products">
+            <div class="menu">
+                <img src="https://www.licious.in/img/rebranding/category-dropdown-icon.svg"/>Categories</div>
+            <div class="menu">
+                <img src="https://www.licious.in/img/rebranding/profile_icon.svg"/>Login</div>
+            <div class="menu">
+                <img src="https://www.licious.in/img/rebranding/cart_icon.svg"/>Cart</div>
+        </div>
+    </div>
+</div>
+    <div class="banner">
+        <img class="banner-image" src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_63630e9d6ba0e"/>
+    </div>
+</body>
+</html>
+
+<script>
+window.onscroll = function() {
+    if(window.scrollY==0){
+    document.getElementById("top-grey-bar").style.display = "block";
+    }
+    else{
+    document.getElementById("top-grey-bar").style.display = "none"; 
+    }
+};
+</script>
+
+
