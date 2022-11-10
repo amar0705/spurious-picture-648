@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meat me Once</title>
     <link rel="stylesheet" href="homepage.css"/>
+    <link rel="stylesheet" href="slider.css"/>
 </head>
 <body>
     <div class="header">
@@ -52,13 +53,41 @@
             <div class="menu">
                 <img src="https://www.licious.in/img/rebranding/profile_icon.svg"/>Login</div>
             <div class="menu">
-                <img src="https://www.licious.in/img/rebranding/cart_icon.svg"/>Cart</div>
+                <img src="https://www.licious.in/img/rebranding/cart_icon.svg"/><a href="cart.html">Cart</a></div>
         </div>
     </div>
 </div>
     <div class="banner">
         <img class="banner-image" src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_63630e9d6ba0e"/>
     </div>
+    <div class="section">
+        <br><h2>Shop by Categories</h2>
+        <p class="section-subtitles">Freshest meats just for you</p><br>
+        <div class="sub-section">
+        </div>
+    </div>
+    <div class="section">
+        <br><h2>Best Sellers</h2>
+    </div>
+    <div id="container">
+        <div id="slider-container">
+          <span onclick="slideRight()" class="btn"></span>
+            <div id="slider">
+          </div>
+          <span onclick="slideLeft()" class="btn"></span>
+        </div>
+      </div>
+      <div class="section">
+        <br><h2>Boneless Cuts</h2>
+    </div>
+      <div id="container">
+        <div id="slider-container">
+          <span onclick="slideRight()" class="btn"></span>
+            <div id="slider" class="boneless">
+          </div>
+          <span onclick="slideLeft()" class="btn"></span>
+        </div>
+      </div>
 </body>
 </html>
 
@@ -73,4 +102,7 @@ window.onscroll = function() {
 };
 </script>
 
-
+<script src="category.js"></script>
+<script src="bestSellers.js"></script>
+<script src="slider.js"></script>
+<script src="boneless.js"></script>

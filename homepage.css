@@ -104,3 +104,36 @@ body{
     width: 100%;
     margin-top: 150px;
 }
+.section{
+    width:80%;
+    margin: auto;
+}
+.section-subtitles{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #959799
+}
+.sub-section, .category-section {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.grid-image{
+    width:264px;
+    height: 205px;
+}
+.inner-div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.outer-div > p{
+    text-align: center;
+    font-weight: 600;
+}
