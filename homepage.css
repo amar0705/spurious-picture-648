@@ -3,6 +3,13 @@
     display: block;
 
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:#d11243;
+    cursor: pointer;
+}
 .container{
     margin: 0px auto;
     display: flex;
@@ -59,7 +66,7 @@ body{
     width: 100%;
 }
 .logo{
-    width: 90px;
+    width: 70px;
     border: 1px solid black;
     border-radius: 70px;
 }
@@ -71,16 +78,16 @@ body{
     flex-direction: row;
 }
 #input {
-    border: 1px solid grey;
+    border: 1px solid rgb(202, 202, 202);
     padding: 12px 20px;
     border-radius: 10px;
     cursor: pointer;
-    width:25%;
+    width: 25%;
     font-size: 20px;
-    background-color: #eaeaea;
+    background-color: rgb(246 246 246);
 }
 #location{
-    border: 1px solid grey;
+    border: none;
     padding: 12px 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -98,6 +105,10 @@ body{
     flex-direction: row;
     gap:5px;
     align-items: center;
+}
+.menu:hover{
+    color:#d11243;
+    cursor: pointer;
 }
 .banner-image{
     height: 400px;
@@ -123,6 +134,13 @@ body{
 .grid-image{
     width:264px;
     height: 205px;
+    transition: width 0.5s, height 0.5s;
+    cursor: pointer;
+}
+.grid-image:hover{
+    width: 280px;
+    height: 221px;
+    
 }
 .inner-div{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -136,4 +154,50 @@ body{
 .outer-div > p{
     text-align: center;
     font-weight: 600;
+}
+.blog{
+   width:80%;
+   display: flex;
+   margin: auto;
+   justify-content: space-between;
+}
+.blog > div > img {
+    height: 300px;
+    width: 90%;
+    border-radius: 10px;
+   
+}
+.blog > div > h4{
+    width:90%;
+}
+.blog-text{
+    width:80%;
+    margin-left: 10%;;
+}
+.last-image{
+    width:80%;
+    margin:auto;
+}
+.detail{
+    width:80%;
+    display:flex;
+    margin:auto;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 10px;
+    padding: 30px;
+}
+.detail > div:not(:last-child){
+    border-right:1px solid rgb(202, 202, 202);
+    text-align: center;
+}
+
+.detail > div{
+    width: 240px;
+    text-align: center;
+}
+
+.detail > h4{
+    color: rgb(58, 58, 58);
 }

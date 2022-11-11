@@ -51,6 +51,7 @@ let category= [
 ]
 
 document.querySelector(".sub-section").innerHTML=""
+document.querySelector(".category-section").innerHTML=""
 
 category.forEach((elem)=>{
 
@@ -75,4 +76,42 @@ category.forEach((elem)=>{
 
 });
 
+
+category.forEach((elem)=>{
+
+    let outerDiv = document.createElement("div")
+
+    let innerDiv = document.createElement("div")
+
+    let image = document.createElement("img")
+    image.setAttribute("src",elem.img)
+    image.setAttribute("class","grid-image")
+
+    innerDiv.append(image)
+    innerDiv.setAttribute("class", "inner-div")
+
+    let desc = document.createElement("p")
+    desc.innerText = elem.title;
+
+    outerDiv.append(innerDiv, desc)
+    outerDiv.setAttribute("class", "outer-div")
+
+    document.querySelector(".category-section").append(outerDiv)
+
+});
+
+let blog = [
+    {
+        image: "https://www.licious.in/blog/wp-content/uploads/2022/10/shutterstock_521679751.jpg",
+        desc: "Do you love sandwiches? If yes, how about you learn to make a healthy and yummy Chicken Club Sandwich at home?"
+    },
+    {
+        image: "https://www.licious.in/blog/wp-content/uploads/2022/10/shutterstock_521679751.jpg",
+        desc: "Do you love sandwiches? If yes, how about you learn to make a healthy and yummy Chicken Club Sandwich at home?"
+    },
+    {
+        image: "https://www.licious.in/blog/wp-content/uploads/2022/10/shutterstock_521679751.jpg",
+        desc: "Do you love sandwiches? If yes, how about you learn to make a healthy and yummy Chicken Club Sandwich at home?"
+    }
+]
 

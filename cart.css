@@ -1,0 +1,32 @@
+#cart-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap:20px;
+    width:90%;
+    margin:auto;
+    padding-top:200px;
+}
+
+#cart-menu .slide{
+    
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #d11243;
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 900;
+    padding: 20px 50px;
+  }
+   

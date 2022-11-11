@@ -1,1 +1,0 @@
-# spurious-picture-648
