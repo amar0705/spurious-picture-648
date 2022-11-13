@@ -141,30 +141,6 @@ bestSellers.forEach((elem)=>{
             btn.innerText = `Cart (${elem.cartQty})`
             localStorage.setItem("cartItems", JSON.stringify(bestSellers.filter(item=>item.cartQty>0)))
         })
-
-    //     btn = document.createElement("div")
-    //     btn.setAttribute("class", "add-to-cart-div-btn")
-        
-    //     let minus = document.createElement("img")
-    //     let text = document.createElement("p")
-
-    //     minus.setAttribute("src", "https://www.pngall.com/wp-content/uploads/5/Red-Minus-PNG-HD-Image.png")
-    //     minus.addEventListener("click", function(){
-    //         elem.cartQty = elem.cartQty-1
-    //         text.innerText = elem.cartQty
-    //         localStorage.setItem("cartItems", JSON.stringify(bestSellers.filter(item=>item.cartQty>0)))   
-    //     })
-
-
-    //     let plus = document.createElement("img")
-    //     plus.setAttribute("src", "https://www.clipartmax.com/png/middle/76-764590_red-plus-sign-transparent.png")
-    //     plus.addEventListener("click", function(){
-    //         elem.cartQty = elem.cartQty+1
-    //         text.innerText = elem.cartQty
-    //         localStorage.setItem("cartItems", JSON.stringify(bestSellers.filter(item=>item.cartQty>0)))       
-    //     })
-
-    //     btn.append(minus, text, plus)
         
     priceDiv.append(mrp, btn)
 
